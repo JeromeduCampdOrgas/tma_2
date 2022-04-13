@@ -1,29 +1,178 @@
-.App {
-  text-align: center;
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
+
+/***** Header *************/
+#header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  background: #000;
+}
+#logo {
+  background: red;
+}
+#navigation {
+  border: 1px black solid;
+  flex: 2;
+  vertical-align: middle;
+  margin-top: 20px;
+  margin-left: 150px;
+  padding-right: 15px;
+}
+#navigation ul {
+  display: flex;
+  justify-content: space-between;
+}
+#navigation ul li {
+  list-style-type: none;
+  color: #fff;
+}
+#navigation ul #login {
+  color: red;
+}
+/*********** Footer *******************/
+#footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+}
+#footer ul li {
+  text-align: left;
+  list-style-type: none;
+  color: #fff;
+}
+.footer {
+  height: 200px;
+}
+#footer ul h4 {
+  margin: auto;
+  margin-block-start: 0em;
+}
+/****** Home ************/
+#home {
+  margin: 60px 0 0 0;
+  flex: 2;
+  width: 100%;
+  min-height: 94vh;
+  background: #fff url("./images/images/fond/piano.jpg") center / cover
+    no-repeat;
+}
+#home h1 {
+  font-size: 100px;
+  padding-left: 100px;
+  text-align: center;
+  color: #fff;
+  z-index: 100;
+}
+#home img {
+  opacity: 0.2;
+  z-index: 1;
+}
+.home-type-writter {
+  padding-top: 150px;
+  font-size: 70px;
+}
+#home p {
+  width: 50%;
+  margin: auto;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 100px;
+  text-align: center;
+  color: #fff;
+  z-index: 100;
+}
+#btn-try-like {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
+  margin: 30px auto;
+}
+#trail-btn {
+  display: flex;
+  height: 70px;
+  width: 70%;
+  text-align: center;
+  background-color: rgb(60, 179, 90);
+  border-radius: 5px;
+}
+#trail-btn h5 {
+  height: 70px;
+  padding-top: 15px;
+  text-decoration: none;
+  font-size: 30px;
+  margin: auto;
+  vertical-align: middle;
+  color: #fff;
+}
+#trail-btn #arrow {
+  height: 70px;
+  width: 80px;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  font-size: 20px;
+  background-color: green;
+}
+.like {
+  width: 15%;
+  height: 30px;
+  padding: 3px;
+  vertical-align: center;
+  border-radius: 5px;
+  background-color: blue;
+}
+/********** Cta ********************/
+#cta {
+  display: flex;
+  justify-content: space-around;
+  min-height: 400px;
+}
+.cta-div {
+  width: 25%;
+  margin: 50px auto;
+}
+.cta-div .cta-icons {
+  font-size: 55px;
+  color: grey;
+}
+.cta-div p {
+  width: 65%;
+  margin: 30px auto 0 auto;
+}
+.btn-gate {
+  width: 45%;
+  margin: 50px auto;
+  padding: 10px;
+  background-color: rgb(103, 198, 103);
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+}
+/**********************************/
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
 }
