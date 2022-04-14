@@ -1,11 +1,16 @@
+import React, { useState, useEffect, useContext } from "react";
+import DeviceYPosition from "../../contexts/DeviceYPosition";
+
 import { IoMdUnlock } from "react-icons/io";
 import { BsMegaphoneFill } from "react-icons/bs";
 import { FaGraduationCap } from "react-icons/fa";
 
 function Cta() {
+  const { y, setY } = useContext(DeviceYPosition);
+
   return (
     <section id="cta">
-      <div className="cta-div">
+      <div id="share" className="cta-div">
         <div className="cta-icons">
           <IoMdUnlock />
         </div>
@@ -16,7 +21,7 @@ function Cta() {
         </p>
         <button className="btn-gate">CREATE GATE</button>
       </div>
-      <div className="cta-div">
+      <div id="promote" className="cta-div">
         <div className="cta-icons">
           <BsMegaphoneFill />
         </div>
@@ -27,7 +32,7 @@ function Cta() {
         </p>
         <button className="btn-gate">PROMOTE</button>
       </div>
-      <div className="cta-div">
+      <div id="learn" className="cta-div">
         <div className="cta-icons">
           <FaGraduationCap />
         </div>

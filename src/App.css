@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow: "scroll";
 }
 
 /***** Header *************/
@@ -156,7 +157,7 @@
   width: 65%;
   margin: 30px auto 0 auto;
 }
-.btn-gate {
+.cta-div .btn-gate {
   width: 45%;
   margin: 50px auto;
   padding: 10px;
@@ -165,6 +166,32 @@
   border-radius: 3px;
   color: #fff;
   font-weight: bold;
+}
+.cta-div .btn-gate:hover {
+  cursor: pointer;
+}
+#share {
+  /*animation: 1s cta-share linear forwards 0s;*/
+  animation: cta-share 1000ms ease-in-out 0ms normal;
+}
+#promote {
+  /*animation: 2s cta-share linear forwards 0s;*/
+  animation: cta-share 2000ms ease-in-out 0ms normal;
+}
+#learn {
+  /* animation: 3s cta-share linear forwards 0s;*/
+  animation: cta-share 3000ms ease-in-out 0ms normal;
+}
+/******** Animations Cta *****************/
+@keyframes cta-share {
+  0% {
+    opacity: 0;
+    /*transform: translate(-3%, 5%);*/
+  }
+  100% {
+    opacity: 1;
+    /*transform: translate(0%, 0%);*/
+  }
 }
 /**********************************/
 
