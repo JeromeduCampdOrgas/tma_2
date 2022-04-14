@@ -172,15 +172,15 @@
 }
 #share {
   /*animation: 1s cta-share linear forwards 0s;*/
-  animation: cta-share 1000ms ease-in-out 0ms normal;
+  animation: cta-share 500ms ease-in-out 0ms normal;
 }
 #promote {
   /*animation: 2s cta-share linear forwards 0s;*/
-  animation: cta-share 2000ms ease-in-out 0ms normal;
+  animation: cta-share 1000ms ease-in-out 0ms normal;
 }
 #learn {
   /* animation: 3s cta-share linear forwards 0s;*/
-  animation: cta-share 3000ms ease-in-out 0ms normal;
+  animation: cta-share 1500ms ease-in-out 0ms normal;
 }
 /******** Animations Cta *****************/
 @keyframes cta-share {
